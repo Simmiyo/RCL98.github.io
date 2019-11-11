@@ -1,0 +1,55 @@
+
+#title{
+	position: absolute; 
+	font-family: 'great_vibesregular';
+	font-size: 3.5em;
+	left: 40%;
+	top: 15vh;
+	width: 55%;
+	max-height: 12vh;
+	animation: example;
+}
+
+.p20{padding-left: 1.30vw;}
+
+.p25{padding-left: 1.62vw;}
+
+.p40{padding-left: 2.60vw;}
+
+.p50{padding-left: 3.25vw;}
+
+.p75{padding-left: 4.88vw;}
+
+.p100{padding-left: 6.51vw;}
+
+
+#buttons .positioning_button{
+	top: 0vh;
+	left: 0.65vw;
+}
+
+#positioning_text{
+    top: 0vh;
+	right: 5vw;
+}
+
+table{
+	position: relative;
+	top: 0vh;
+}
+
+#sortInfo{
+	position: relative;
+	top: 5vh;
+	left: 30%;
+}
+
+@keyframes changecolors{
+	0%{background-color: red;}
+	50%{background-color: blue;}
+	100%{background-color: green;}
+}
+
+#sortInfo:hover {
+	animation: changecolors 4s infinite ease-in;
+}
