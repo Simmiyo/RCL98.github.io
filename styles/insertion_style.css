@@ -1,0 +1,50 @@
+
+#title{
+	position: relative; 
+	font-family: 'space_age';
+	font-size: 3em;
+	left: 30%;
+	top: 9vh;
+	width: 50%;
+	max-height: 9vh;
+	animation: example;
+}
+
+
+.p30{padding-left: 1.95vw;}
+
+.p60{padding-left: 3.9vw;}
+
+.p65{padding-left: 4.23vw;}
+
+.p90{padding-left: 5.85vw;}
+
+#buttons .positioning_button{
+	top: 0vh;
+	left: 0.65vw;
+}
+
+#positioning_text{
+    top: 0vh;
+	right: 5vw;
+}
+
+table{
+	position: relative;
+	top: 0vh;
+}
+
+@keyframes shrink{
+	0%{transform: scale(1.1);}
+	100%{transform: scale(0);}
+}
+
+#sortInfo{
+	position: relative;
+	top: 5vh;
+	left: 30%;
+}
+
+.shrink {
+	animation: shrink 3s forwards;
+}
