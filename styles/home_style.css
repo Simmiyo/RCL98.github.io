@@ -1,0 +1,120 @@
+
+#title{
+	position: relative; 
+	font-family: 'Bitwise';
+	font-size: 3.5em;
+	left: 32%;
+	top: 10vh;
+	margin-right: 5vw;
+	width: 50%;
+	max-height: 12vh;
+	animation: example;
+}
+
+nav-link active {
+    background-color: #4CAF50;
+}
+
+#descriere{
+	position: relative;
+	left: 5vw;
+	top: 20vw;
+}
+
+#vid{
+	position: relative;
+	top: 10vw;
+}
+
+#social{
+	position: relative;
+	bottom: 25%;
+	float: right;
+	right: 42%;
+}
+
+#btnSubmit{
+	position: relative;
+	top: 30%;
+	left: 15%;
+}
+
+.fa {
+  display: inline !important;
+  padding: 1.1vw;
+  font-size: 1.95vw;
+  width: 1.95vw;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.drop {
+  animation: drop 1.2s forwards;
+}
+
+@keyframes drop {
+  0% {
+    transform-origin: center;
+    opacity: 1;
+  }
+  20% {
+    transform: 
+      translate3d(0, 20px, 0)
+      rotate3d(0, 0, 1, -10deg);
+    opacity: 1;
+  }
+  40%, 45% {
+    transform: 
+      translate3d(0, -120px, 0)
+      rotate3d(0, 0, 1, 10deg);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: 
+      translate3d(0, 2000px, 0)
+      rotate3d(0, 0, 1, 10deg);
+  }
+}
+	
