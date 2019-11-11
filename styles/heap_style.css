@@ -1,0 +1,55 @@
+#title{
+	position: relative; 
+	font-family: 'Resident Evil';
+	font-size: 3.5em;
+	left: 40%;
+	top: 13vh;
+	margin-right: 5vw;
+	width: 50%;
+	max-height: 12vh;
+	animation: example;
+}
+
+.p30{padding-left: 1.95vw;}
+
+.p10{padding-left: 0.65vw;}
+
+.p10d{padding-left: 0.65vw;
+	color: rgb(165, 16, 1);}
+
+.p20{padding-left: 1.23vw;}
+
+.p170{padding-left: 15vw;}
+
+.p150{padding-left: 13vw;}
+
+
+#positioning_text{
+    top: 0vh;
+	left: 0vh !important;
+}
+
+#sortInfo{
+	position: relative;
+	top: 35vh;
+	left: 3%;
+	width: 50%;
+}
+
+#alg{
+	position:relative; 
+	left:15%;
+	width:70%;
+}
+
+#img
+{
+position: relative;
+height:auto;
+width:70%;
+top: 5vh;
+left: 5vw;
+}
+#img h2{
+	font-size: 1.2em;
+}
