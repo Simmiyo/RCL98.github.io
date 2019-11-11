@@ -1,0 +1,46 @@
+
+#title{
+	position: relative; 
+	font-family: 'freshot';
+	font-size: 5.7em;
+	left: 43%;
+	top: 6vh;
+	width: 50%;
+	max-height: 9vh;
+	animation: example;
+}
+
+@keyframes teleport{
+	0%{opacity: 0; transform: translate(150%); left: 0;}
+	25%{opacity: 1;}
+	50%{opacity: 0; transform: translate(-0%); left: 0;}
+	75%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+#sortInfo{
+	position: relative; 
+	left: 0.65vw; 
+	top: 7vh;  
+	border: 1px solid black; 
+	margin-right: 58.60vw;
+	animation: teleport 6s infinite steps(1, end);	
+	background-color: yellow;
+}
+
+
+#buttons .positioning_button{
+	top: 0vh;
+	left: 0.65vw;
+}
+
+#positioning_text{
+    top: 0vh;
+	right: 5vw;
+}
+
+table{
+	position: relative;
+	top: 5vh;
+}
+
