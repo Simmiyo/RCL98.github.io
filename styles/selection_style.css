@@ -1,0 +1,49 @@
+
+#title{
+	position: absolute; 
+	font-family: 'the_pragueregular';
+	font-size: 5em;
+	left: 40%;
+	top: 12vh;
+	width: 50%;
+	max-height: 9vh;
+	animation: example;
+}
+
+.p12789{padding-left: 1.95vw;}
+
+.pp{padding-left: 4.23vw;}
+
+.p56{padding-left: 5.89vw;}
+
+.pp1{padding-left: 5.20vw;}
+
+.p3{padding-left: 3.9vw;}
+
+.p7{padding-left: 4.55vw;}
+
+
+#buttons .positioning_button{
+	top: 0vh;
+	left: 0.65vw;
+}
+
+#positioning_text{
+    top: 0vh;
+	right: 5vw;
+}
+
+table{
+	position: relative;
+	top: 9vh;
+}
+
+#sortInfo{
+	position: relative;
+	top: 12vh;
+	left: 30%;
+}
+
+#sortInfo:hover {
+	transform:  scale(1.1);
+}
