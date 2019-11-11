@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Home</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="styles/general_style.css">
+	<link rel="stylesheet" type="text/css" href="styles/help_style.css">
+	<link rel="stylesheet" type="text/css" href="styles/bitwise/stylesheet.css">
+	
+	<link rel="icon" href="imagini/sort-by-numeric-order.png" type="image/gif" sizes="16x16">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+
+</head>
+
+
+<body>
+
+
+<nav class="navbar navbar-expand-md navbar-toggleable-sm justify-content-center">
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link active" href="Help.html">Help</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Sorting Algorithms
+      </a>
+      <div class="dropdown-menu">
+            <a class="dropdown-item" href="Bubble_sort.html">Bubble Sort</a>
+			<a class="dropdown-item" href="Selection_sort.html">Selection Sort</a>
+			<a class="dropdown-item" href="Insertion_sort.html">Insertion Sort</a>
+			<a class="dropdown-item" href="Shell_sort.html">Shell Sort</a>
+			<a class="dropdown-item" href="Merge_sort.html">Merge Sort</a>
+			<a class="dropdown-item" href="Quick_sort.html">Quick Sort</a>
+			<a class="dropdown-item" href="Heap_sort.html">Heap Sort</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+<h1>Descrierea butoanelor</h1>
+<button  >Sortare Rapida</button>
+<p>-Butonul de sortatre rapida mareste viteza de redare a animatiei algoritmului.<p>
+<button >Sort</button>
+<p>-Butonul de sortatre porneste o redare a animatiei algoritmului.<p>
+<button  >Stop</button>
+<p>-Butonul de stop oprestere redarea animatiei algoritmului.<p>
+<button >Next</button> 
+<p>-Butonul de next activeaza manual trecere la urmatorul pas al algoritmului.<p>
+<h3>Atentie!</h3>
+<p>Odata activat butonul de Sortare Rapida sau butonul Sort acestea nu vor mai putea fi utilizate pana la activarea butonului Stop.</p>
+<h1>Descrierea animatiilor</h1>
+<div class="alignl">
+<h2>Pentru algoritmurile BubbleSort,InsertionSort,SelectionSort si ShellSort exista animatii disponibile care prezinta modul in care functioneaza algoritmii.
+Animatiile lucreaza fie pe codul propriu-zis sau pe tabloul de sortare, care contine elementele unui vector si pozitia lor in acest vector.Astfel:</h2>
+<h3>Pentru fiecare algoritm pasul la care s-a ajuns in executia lui va fi <mark>marcat astfel</mark>.</h3>
+<h1>BubbleSort</h1>
+    <div class="foo yellow"></div>
+	<b>Reprezinta elementul aflat pe pozitia i.</b>
+	 <div class="foo red"></div>
+	<b>Reprezinta elementul aflat pe pozitia i+1 (cel cu care este comparat cel de pe pozitia i).</b>
+	 <div class="foo green"></div>
+	<b>Reprezinta elementele care se afla deja pe pozitia lor finala (nu mai este nevoie de parcurgerea lor).</b>
+
+	<br>
+<h1>SelectionSort</h1>
+    <div class="foo yellow"></div>
+	<b>Reprezinta elementul aflat pe pozitia i.</b>
+	 <div class="foo lightgreen"></div>
+	<b>Reprezinta elementul cu valoare minima.</b>
+	 <div class="foo red"></div>
+	<b>Reprezinta elementul aflat pe pozitia j (cel cu care este comparat elementul minim).</b>
+	 <div class="foo green"></div>
+	<b>Reprezinta elementele care se afla deja pe pozitia lor finala (nu mai este nevoie de parcurgerea lor).</b>		
+	
+	
+<br>	
+<h1>InsertionSort</h1>
+    <div class="foo yellow"></div>
+	<b>Reprezinta elementul aflat pe pozitia j.</b>
+	 <div class="foo red"></div>
+	<b>Reprezinta elementul aflat pe pozitia j-1 (cel cu care este comparat cel de pe pozitia j).</b>
+	
+
+<br>
+<h1>ShellSort</h1>
+    <div class="foo yellow"></div>
+	<b>Reprezinta elementul aflat pe pozitia j.</b>
+	 <div class="foo red"></div>
+	<b>Reprezinta elementul aflat pe pozitia i-p (cel cu care este comparat cel de pe pozitia j si unde p reprezinta pasul iteratiei curente a algoritmului).</b>	
+</div>
+  
+
+</body>
+</html>

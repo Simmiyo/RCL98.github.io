@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Merge sort</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="styles/general_style.css">
+	<link rel="stylesheet" type="text/css" href="styles/merge_style.css">
+	<link rel="stylesheet" type="text/css" href="styles/xxii-army/stylesheet.css">
+	
+	<link rel="icon" href="imagini/sort-by-numeric-order.png" type="image/gif" sizes="16x16">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+<div id="container">
+
+<div class="item-a">
+<nav class="navbar navbar-expand-md navbar-toggleable-sm justify-content-center">
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="Help.html">Help</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Sorting Algorithms
+      </a>
+      <div class="dropdown-menu">
+            <a class="dropdown-item" href="Bubble_sort.html">Bubble Sort</a>
+			<a class="dropdown-item" href="Selection_sort.html">Selection Sort</a>
+			<a class="dropdown-item" href="Insertion_sort.html">Insertion Sort</a>
+			<a class="dropdown-item" href="Shell_sort.html">Shell Sort</a>
+			<a class="active" href="Merge_sort.html">Merge Sort</a>
+			<a class="dropdown-item" href="Quick_sort.html">Quick Sort</a>
+			<a class="dropdown-item" href="Heap_sort.html">Heap Sort</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+<h1 id="title">Merge Sort</h1>
+</div>
+
+<div class="item-b">
+<div id="algoritm">
+<p id="0">void mergeSort(int a[], int st, int m, int dr){</p>
+<p class="p10">int b[100],i,j,k;</p>
+<p class="p10">i=0;j=st;</p>
+<p class="p10d">//copiem prima jumatate din vec a in b</p>
+<p class="p10">while(j&lt;=m)</p>
+<p class="p20">b[i++]=a[j++];</p>
+<br>	
+<p class="p10">i=0;k=st;</p>
+<p class="p10d">//copiem inapoi cel mai mare element la fiecare pas</p>
+<p class="p10">while( k&lt;j && j&lt;=dr)</p>
+<p class="p20">if(b[i]&lt;=a[j])</p>
+<p class="p30">a[k++]=b[i++];</p>
+<p class="p20">else</p>
+<p class="p30">a[k++]=a[j++];</p>
+<br>
+<p class="p10">//copiem elementele ramse daca mai exista</p>
+<p id="5" class="p10">while(k&lt;j)</p>
+<p class="p20">a[k++]=b[i++];</p>
+<p>		}</p>
+<p>void merge(int a[], int st, int dr){</p>
+<p class="p10">if(st&lt;dr){</p>
+<p class="p20">int m = (st_dr)/2;</p>
+<p class="p20">merge(a,st,m);</p>
+<p class="p20">merge(a,m+1;dr);</p>
+<p class="p20">mergesport(a,st,m,dr);</p>
+<p class="p10">}</p>
+<p>}</p>
+</div>
+</div>
+
+<div class="item-c">
+<div id="positioning_text">
+<h2 class="alignc">PREZENTAREA METODEI</h2>
+<h5> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  In cazul sortarii prin interclasare vectorii 
+care se interclaseaza sunt doua secvente ordonate 
+din acelasi vector. Sortarea prin interclasare utilizeaza metoda 
+Divide et Impera: </h5>
+         <h5>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - se imparte vectorul in secvente din ce 
+in ce mai mici, astfel incat fiecare secventa sa fie 
+ordonata la un moment dat si interclasata cu o alta
+ secventa din vector corespunzatoare. </h5>
+       <h5>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - practic interclasarea va incepe cand se
+ ajunge la o secventa formata dintr-un singur element
+ (aceasta fiind considerata ca fiind o secventa ordonata).   
+Aceasta  se va interclasa cu o alta corespunzatoare. Cele doua secvente vor 
+alcatui in subsir ordonat din vectorul mai mare, care 
+la randul lui se va interclasa cu subsirul 
+corespunzator s.a.m.d.    </h5>
+ 
+ </div>
+
+<h3 class="h3spec">O schema reprezentativa a algoritmului:</h3>
+<div class = "grid-container">	
+	<div class="grid-item">
+		<div class="rectangle1"> 1 </div>
+		<div class="rectangle2"> 2 </div>
+		<div class="rectangle3"> 3 </div>
+		<div class="rectangle4"> 4 </div>
+		<div class="rectangle5"> 5 </div>
+		<div class="rectangle6"> 6 </div>
+		<div class="rectangle7"> 7 </div>
+		<div class="rectangle8"> 8 </div>
+		<div class="rectangle9"> 9 </div>
+		<div class="rectangle10"> 10 </div>
+		
+		<div class="rectangle11"> 11 </div>
+		<div class="rectangle12"> 12 </div>
+		<div class="rectangle13"> 13 </div>
+		<div class="rectangle14"> 14 </div>
+		<div class="rectangle15"> 15 </div>
+		<div class="rectangle16"> 16 </div>
+		<div class="rectangle17"> 17 </div>
+		<div class="rectangle18"> 18 </div>
+		<div class="rectangle19"> 19 </div>
+		<div class="rectangle20"> 20 </div>
+	</div>
+	
+	<div class="grid-item"></div>
+</div>
+</div>
+
+<div class="item-d">
+<div id="sortInfo">
+    <h2 id="sorth2"> Timpuri de executare:</h2>
+	<ol>
+		<li>Cazul mediu : O( N*log(N))</li>
+		<li>Cazul defavorabil : O( N*log(N)</li>
+		<li>Cazul cel mai bun: O( N*log(N))</li>
+		<li>Memorie folosita : O(N)</li>
+		<li>Stabil : DA</li>
+		<li>Sortare descrescatoare : b[i]&gt;=a[j]</li>
+		<li>Sortare crescatoare : b[i]&lt;=a[j]</li>
+	</ol>
+</div>
+</div>
+</div>
+ 
+</body>
+</html>
