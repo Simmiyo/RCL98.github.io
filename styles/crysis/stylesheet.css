@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'CRYSIS';
+    src: url('CRYSIS-Bold.woff2') format('woff2'),
+        url('CRYSIS-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
