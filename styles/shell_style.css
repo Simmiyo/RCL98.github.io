@@ -50,6 +50,20 @@ table{
 	100%{background-color: green;}
 }
 
+@media only screen and (max-width: 850px) {
+	#positioning_text h6{
+		font-size: 0.85em;
+	}
+	#positioning_text h2{
+		font-size: 1.2em;
+	}
+	#title{
+		font-size: 2.5em;
+		top: 30vh;
+		left: 80%;
+	}
+}
+
 #sortInfo:hover {
 	animation: changecolors 4s infinite ease-in;
 }
