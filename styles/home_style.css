@@ -23,7 +23,12 @@ nav-link active {
 
 #vid{
 	position: relative;
-	top: 10vw;
+	top: 10vh;
+}
+
+#vid iframe{
+	width: 46.87vw;
+	height: 76.60vh;
 }
 
 #social{
@@ -87,6 +92,33 @@ nav-link active {
 .fa-reddit {
   background: #ff5700;
   color: white;
+}
+
+@media only screen and (max-width: 850px) {
+  #vid{ 
+	top: 40vh;
+	left: 5.5vw;
+  }
+  #vid 	iframe {
+	width: 45.87vw;
+	height: 40.60vh;
+  }
+  #title{
+	  font-size: 2em;
+  }
+  #social{
+	  right: 28%;
+	  bottom: 40%;
+  }
+  #descriere{
+	  top: 40vh;
+  }
+  #descriere h3{
+      font-size: 1.1em;
+  }
+  #btnSubmit{
+	  top: 20vh;
+  }	  
 }
 
 .drop {
