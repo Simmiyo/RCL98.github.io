@@ -44,3 +44,9 @@ table{
 	top: 5vh;
 }
 
+@media only screen and (max-width: 850px) {
+	#positioning_text h6{
+		font-size: 0.9em;
+	}
+}
+
