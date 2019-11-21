@@ -39,6 +39,21 @@ table{
 	100%{transform: scale(0);}
 }
 
+@media only screen and (max-width: 850px) {
+	#positioning_text h6{
+		font-size: 0.80em;
+	}
+	#positioning_text h2{
+		font-size: 1.5em;
+	}
+	#title{
+		font-size: 1.7em;
+	}
+	table{
+		top: -10vh;
+	}	
+}
+
 #sortInfo{
 	position: relative;
 	top: 5vh;
